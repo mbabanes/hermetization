@@ -1,0 +1,94 @@
+openapi: 3.0.1
+info:
+  title: File Service
+  description: File Service
+  version: 1.0.0
+
+paths:
+  /files:
+    post:
+      operationId: createFile
+      tags:
+        - files
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FileCreatingRequest'
+      responses:
+        '200':
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FileCreatingResponse'
+
+    put:
+      tags:
+        - files
+      operationId: UpdateFile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatingFileRequest'
+      responses:
+        '200':
+          description: Ok
+
+  /files/{barcode}:
+    get:
+      tags:
+        - files
+      operationId: GetFileByBarcode
+      parameters:
+        - name: barcode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Ok.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetFileResponse'
+        '404':
+          description: File not found.
+
+components:
+  schemas:
+    FileCreatingRequest:
+      type: object
+      properties:
+        a:
+          type: string
+        applicationId:
+          type: string
+        data01:
+          type: string
+        file:
+          type: string
+        type:
+          type: integer
+    FileCreatingResponse:
+      type: object
+      properties:
+        barcode:
+          type: string
+    GetFileResponse:
+      type: object
+      properties:
+        barcode:
+          type: string
+        file:
+          type: string
+    UpdatingFileRequest:
+      type: object
+      properties:
+        barcode:
+          type: string
+        file:
+          type: string

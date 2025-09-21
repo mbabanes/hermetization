@@ -1,0 +1,17 @@
+<body>
+    <addBorder>
+        <auth href="#id1" />
+        <border href="#id2" />
+    </addBorder>
+    <Auth id="id1" >
+        <login>login</login>
+        <password>pass</password>
+    </Auth>
+    <Border id="id2">
+        <header href="#id3" />
+    </Border>
+    <BorderHeader id="id3" >
+        <data>text</data>
+    </BorderHeader>
+
+</body>
