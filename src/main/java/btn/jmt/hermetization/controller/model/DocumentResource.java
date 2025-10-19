@@ -1,4 +1,4 @@
-package btn.jmt.hermetization.controller.internal.model;
+package btn.jmt.hermetization.controller.model;
 
 import btn.jmt.hermetization.service.document.dto.DocumentDetails;
 import btn.jmt.hermetization.service.document.dto.DocumentType;

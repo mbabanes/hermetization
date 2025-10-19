@@ -1,4 +1,4 @@
-package btn.jmt.hermetization.controller.internal.model;
+package btn.jmt.hermetization.controller.model;
 
 import java.util.ArrayList;
 import java.util.List;

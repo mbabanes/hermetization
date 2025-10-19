@@ -1,4 +1,4 @@
-package btn.jmt.hermetization.controller.external.xservice.validation;
+package btn.jmt.hermetization.controller.validation;
 
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;

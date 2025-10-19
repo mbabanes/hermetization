@@ -1,9 +1,7 @@
-package btn.jmt.hermetization.controller.internal;
+package btn.jmt.hermetization.controller;
 
-import btn.jmt.hermetization.controller.internal.model.DocumentResource;
-import btn.jmt.hermetization.controller.internal.model.DocumentTypeResource;
+import btn.jmt.hermetization.controller.model.DocumentResource;
 import btn.jmt.hermetization.service.document.DocumentService;
-import btn.jmt.hermetization.service.document.dto.DocumentDetails;
 import btn.jmt.hermetization.service.document.dto.DocumentId;
 import btn.jmt.hermetization.service.process.dto.ProcessNumber;
 import lombok.RequiredArgsConstructor;

@@ -1,8 +1,8 @@
 package btn.jmt.hermetization.configuration;
 
-import btn.jmt.hermetization.controller.internal.model.Error;
-import btn.jmt.hermetization.controller.internal.model.ErrorCode;
-import btn.jmt.hermetization.controller.internal.model.ErrorResponse;
+import btn.jmt.hermetization.controller.model.Error;
+import btn.jmt.hermetization.controller.model.ErrorCode;
+import btn.jmt.hermetization.controller.model.ErrorResponse;
 import btn.jmt.hermetization.service.document.exception.DocumentFileNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;

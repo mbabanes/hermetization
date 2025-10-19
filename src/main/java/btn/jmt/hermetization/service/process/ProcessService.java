@@ -1,13 +1,13 @@
 package btn.jmt.hermetization.service.process;
 
-import btn.jmt.hermetization.controller.external.xservice.model.XServiceRequest;
+import btn.jmt.hermetization.controller.model.CreateProcessRequest;
 import btn.jmt.hermetization.service.process.dto.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public interface ProcessService {
 
-  ProcessDetails createProcess(XServiceRequest request);
+  ProcessDetails createProcess(CreateProcessRequest request);
 
   PhoneNumber findPhoneNumber(ProcessNumber processNumber);
 

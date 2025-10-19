@@ -1,6 +1,6 @@
 package btn.jmt.hermetization.service.process;
 
-import btn.jmt.hermetization.controller.external.xservice.model.XServiceRequest;
+import btn.jmt.hermetization.controller.model.CreateProcessRequest;
 import btn.jmt.hermetization.service.process.dto.*;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,7 +17,7 @@ class ProcessServiceImpl implements ProcessService {
   private final ProcessRepository processRepository;
 
   @Override
-  public ProcessDetails createProcess(XServiceRequest request) {
+  public ProcessDetails createProcess(CreateProcessRequest request) {
     final var processNumber = new ProcessNumber(UUID.randomUUID().toString());
     log.info("Creating process {}", processNumber);
     return processRepository.save(ProcessEntity.createNew(processNumber)).toDto();

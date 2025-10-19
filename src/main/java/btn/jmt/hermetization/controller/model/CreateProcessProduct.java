@@ -1,4 +1,4 @@
-package btn.jmt.hermetization.controller.external.xservice.model;
+package btn.jmt.hermetization.controller.model;
 
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotEmpty;
@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 @Data
 @Setter(AccessLevel.PACKAGE)
-public class XServiceProduct {
+public class CreateProcessProduct {
 
     @NotEmpty
     private String id;

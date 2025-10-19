@@ -1,4 +1,4 @@
-package btn.jmt.hermetization.controller.external.xservice.model;
+package btn.jmt.hermetization.controller.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
@@ -6,7 +6,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class XServiceClient {
+public class CreateProcessClient {
   @NotEmpty
   @Size(max = 30)
   private String clientId;

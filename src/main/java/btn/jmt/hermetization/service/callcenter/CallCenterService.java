@@ -1,6 +1,6 @@
-package btn.jmt.hermetization.service.agenttask;
+package btn.jmt.hermetization.service.callcenter;
 
-import btn.jmt.hermetization.service.agenttask.dto.TaskContent;
+import btn.jmt.hermetization.service.callcenter.dto.TaskContent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

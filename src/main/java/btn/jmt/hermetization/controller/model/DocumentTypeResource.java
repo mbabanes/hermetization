@@ -1,4 +1,4 @@
-package btn.jmt.hermetization.controller.internal.model;
+package btn.jmt.hermetization.controller.model;
 
 public enum DocumentTypeResource {
     INFO, ATTACHMENT

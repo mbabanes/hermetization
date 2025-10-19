@@ -1,25 +1,24 @@
-package btn.jmt.hermetization.controller.external.xservice;
+package btn.jmt.hermetization.controller;
 
-import btn.jmt.hermetization.controller.external.xservice.model.XServiceRequest;
-import btn.jmt.hermetization.controller.external.xservice.model.XServiceResponse;
+import btn.jmt.hermetization.controller.model.CreateProcessRequest;
+import btn.jmt.hermetization.controller.model.CreateProcessResponse;
 import btn.jmt.hermetization.service.process.ProcessService;
 import btn.jmt.hermetization.service.process.dto.ProcessDetails;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-class XServiceController {
+class ProcessController {
 
   private final ProcessService processService;
 
   @PostMapping("process")
-  XServiceResponse createProcess(@RequestBody @Valid XServiceRequest request) {
+  CreateProcessResponse createProcess(@RequestBody @Valid CreateProcessRequest request) {
     final ProcessDetails process = processService.createProcess(request);
-    return XServiceResponse.from(process);
+    return CreateProcessResponse.from(process);
   }
 }

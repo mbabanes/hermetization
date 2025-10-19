@@ -1,7 +1,7 @@
 package btn.jmt.hermetization.service.process;
 
-import btn.jmt.hermetization.service.agenttask.CallCenterService;
-import btn.jmt.hermetization.service.agenttask.dto.TaskContent;
+import btn.jmt.hermetization.service.callcenter.CallCenterService;
+import btn.jmt.hermetization.service.callcenter.dto.TaskContent;
 import btn.jmt.hermetization.service.email.EmailService;
 import btn.jmt.hermetization.service.email.dto.EmailInput;
 import btn.jmt.hermetization.service.process.dto.EmailAddress;
